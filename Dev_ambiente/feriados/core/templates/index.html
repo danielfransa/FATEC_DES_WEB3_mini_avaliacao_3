@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Feriado de Natal</title>
+</head>
+<body>
+  {% if quarta %}
+    <h1>{{ quarta }}</h1>
+  {% else %}
+    {% if nome %}
+      <h1>Hoje é feriado de {{ nome }}</h1>
+    {% else %}
+      <h1>Hoje não é feriado.</h1>
+    {% endif %}
+  {% endif %}
+  
+</body>
+</html>
